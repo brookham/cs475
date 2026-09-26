@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <math.h>
 
-#define NUMT	        4	// number of threads to use -- do once for 1 and once for 4
+#define NUMT	        1	// number of threads to use -- do once for 1 and once for 4
 #define SIZE       	16384	// array size -- you get to decide
 #define NUMTRIES        20	// how many times to run the timing to get reliable timing data
 
@@ -53,9 +53,10 @@ main( )
 	// note: %lf stands for "long float", which is how printf prints a "double"
 	//        %d stands for "decimal integer", not "double"
 
-	float Speedup = 2.050493348;
-        float Fp = (4./3.)*( 1. - (1./Speedup) );
+	float speedup = 3150.42/1536.44;
+        float Fp = (4./3.)*( 1. - (1./speedup) );
 
+        fprintf( stderr, "speedup = %lf\n", speedup);
         fprintf( stderr, "fp = %lf\n", Fp );
 
         return 0;
