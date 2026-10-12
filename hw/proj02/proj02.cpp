@@ -67,6 +67,11 @@ float	NowHeight;		// grain height in inches
 int	NowNumDeer;		// number of deer in the current population
 int NowNumMonster; // number of scary monsters in the current population
 
+float HIBERNATE_TEMP          = 50.0;  // monsters are dormant below this
+float MONSTER_TRAMPLES        = 0.5;   // inches of grain each monster ruins per month
+int   DEER_NEEDED_PER_MONSTER = 2;     // fewer deer than this per monster -> starvation
+int   DEER_FOR_NEW_MONSTER    = 4;     // deer per monster needed to grow
+
 
 const float GRAIN_GROWS_PER_MONTH =	       12.0;
 const float ONE_DEER_EATS_PER_MONTH =		1.0;
@@ -126,7 +131,8 @@ void Deer()
         else
         if( nextNumDeer > carryingCapacity )
                 nextNumDeer--;
-        nextNumDeer -= NowNumMonster;
+        if( NowTemp >= HIBERNATE_TEMP )
+            nextNumDeer -= NowNumMonster;
         if( nextNumDeer < 0 )
                 nextNumDeer = 0;
         WaitBarrier(); // 1.
@@ -150,6 +156,7 @@ void Grain()
         float nextHeight = NowHeight;
         nextHeight += tempFactor * precipFactor * GRAIN_GROWS_PER_MONTH;
         nextHeight -= (float)NowNumDeer * ONE_DEER_EATS_PER_MONTH;
+        nextHeight -= (float)NowNumMonster * MONSTER_TRAMPLES;
         if (nextHeight < 0.) {
             nextHeight = 0.;
         }
@@ -168,13 +175,13 @@ void Monster()
     {
         int nextNumMonster = NowNumMonster;
         int carryingCapacity = NowNumDeer / 4;
-        if( nextNumMonster < carryingCapacity )
-                nextNumMonster++;
+        if( NowNumDeer < NowNumMonster * DEER_NEEDED_PER_MONSTER )
+            nextNumMonster--;
         else
-        if( nextNumMonster > carryingCapacity )
-                nextNumMonster--;
+        if( NowNumDeer >= (NowNumMonster + 1) * DEER_FOR_NEW_MONSTER )
+            nextNumMonster++;
         if( nextNumMonster < 0 )
-                nextNumMonster = 0;
+            nextNumMonster = 0;
         WaitBarrier(); // 1.
         // Copy the computed next state to the Now state
         NowNumMonster = nextNumMonster;
