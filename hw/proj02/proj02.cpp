@@ -96,7 +96,7 @@ void Watcher()
         // do nothing
         WaitBarrier(); // 2.
         //<< write out the â€œNowâ€ state of data >>
-        printf("%d, %d, %f, %f, %d, %d\n", NowYear, NowMonth, NowPrecip, NowHeight, NowNumDeer, NowNumMonster);
+        printf("%d, %d, %f, %f, %f, %d, %d\n", NowYear, NowMonth, NowTemp, NowPrecip, NowHeight, NowNumDeer, NowNumMonster);
         // Advance time
         NowMonth++;
         if (NowMonth > 11)
@@ -193,7 +193,7 @@ void Monster()
 
 int main(int argc, char *argv[])
 {
-    printf("Year, Month, Precipitation, Grain Height, Num Deer, Num Monster\n");
+    printf("Year, Month, Temperature, Precipitation, Grain Height, Num Deer, Num Monster\n");
 
     // starting date and time:
     NowMonth =    0;
@@ -203,6 +203,9 @@ int main(int argc, char *argv[])
     NowNumDeer = 20;
     NowHeight =  25.;
     NowNumMonster = 1;
+    NowTemp = 30;
+    NowPrecip = 10;
+
 
     InitBarrier(4);
     omp_set_num_threads(4); // same as # of sections
