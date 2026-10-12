@@ -58,7 +58,7 @@ float Ranf(float low, float high)
 }
 
 
-int	NowYear;		// 2026- 2030
+int	NowYear;		// 2024- 2030
 int	NowMonth;		// 0 - 11
 
 float	NowPrecip;		// inches of rain per month
@@ -190,7 +190,7 @@ int main(int argc, char *argv[])
 
     // starting date and time:
     NowMonth =    0;
-    NowYear  = 2026;
+    NowYear  = 2024;
 
     // starting state (feel free to change this if you want):
     NowNumDeer = 20;
