@@ -1,0 +1,338 @@
+OpenMP is supported -- version = 201511
+  0     73.94     40.66  NewYork,NY
+  1    118.41     34.02  LosAngeles,CA
+  2     87.68     41.84  Chicago,IL
+  3     95.39     29.79  Houston,TX
+  4    112.09     33.57  Phoenix,AZ
+  5     75.13     40.01  Philadelphia,PA
+  6     98.52     29.46  SanAntonio,TX
+  7    117.14     32.81  SanDiego,CA
+  8     96.77     32.79  Dallas,TX
+  9     97.75     30.30  Austin,TX
+ 10     81.66     30.34  Jacksonville,FL
+ 11    121.81     37.30  SanJose,CA
+ 12     97.35     32.78  FortWorth,TX
+ 13     82.99     39.99  Columbus,OH
+ 14     80.83     35.21  Charlotte,NC
+ 15     86.15     39.78  Indianapolis,IN
+ 16    123.03     37.73  SanFrancisco,CA
+ 17    122.35     47.62  Seattle,WA
+ 18    104.88     39.76  Denver,CO
+ 19     97.51     35.47  OklahomaCity,OK
+ 20     86.79     36.17  Nashville,TN
+ 21    106.43     31.85  ElPaso,TX
+ 22     77.02     38.90  Washington,DC
+ 23    115.26     36.23  LasVegas,NV
+ 24     71.02     42.34  Boston,MA
+ 25    122.65     45.54  Portland,OR
+ 26     85.65     38.17  Louisville,KY
+ 27     89.97     35.11  Memphis,TN
+ 28     83.10     42.38  Detroit,MI
+ 29     76.61     39.30  Baltimore,MD
+ 30     87.97     43.06  Milwaukee,WI
+ 31    106.65     35.10  Albuquerque,NM
+ 32    110.87     32.15  Tucson,AZ
+ 33    119.79     36.78  Fresno,CA
+ 34    121.47     38.57  Sacramento,CA
+ 35    111.72     33.40  Mesa,AZ
+ 36     94.56     39.12  KansasCity,MO
+ 37     84.42     33.76  Atlanta,GA
+ 38    104.76     38.87  ColoradoSprings,CO
+ 39     96.05     41.26  Omaha,NE
+ 40     78.64     35.83  Raleigh,NC
+ 41     76.03     36.78  VirginiaBeach,VA
+ 42    118.17     33.78  LongBeach,CA
+ 43     80.21     25.78  Miami,FL
+ 44    122.23     37.77  Oakland,CA
+ 45     93.27     44.96  Minneapolis,MN
+ 46     95.90     36.13  Tulsa,OK
+ 47    119.04     35.35  Bakersfield,CA
+ 48     82.47     27.97  Tampa,FL
+ 49     97.35     37.69  Wichita,KS
+ 50     97.12     32.70  Arlington,TX
+ 51    104.72     39.70  Aurora,CO
+ 52     89.93     30.05  NewOrleans,LA
+ 53     81.68     41.48  Cleveland,OH
+ 54    117.76     33.86  Anaheim,CA
+ 55    115.04     36.01  Henderson,NV
+ 56    121.31     37.98  Stockton,CA
+ 57    117.39     33.94  Riverside,CA
+ 58     84.46     38.04  Lexington,KY
+ 59     97.17     27.75  CorpusChristi,TX
+ 60     81.25     28.41  Orlando,FL
+ 61    117.77     33.68  Irvine,CA
+ 62     84.51     39.14  Cincinnati,OH
+ 63    117.88     33.74  SantaAna,CA
+ 64     74.17     40.72  Newark,NJ
+ 65     93.10     44.95  SaintPaul,MN
+ 66     79.98     40.44  Pittsburgh,PA
+ 67     79.83     36.10  Greensboro,NC
+ 68     96.68     40.81  Lincoln,NE
+ 69     78.90     35.98  Durham,NC
+ 70     96.75     33.05  Plano,TX
+ 71     74.06     40.71  JerseyCity,NJ
+ 72     90.24     38.64  St.Louis,MO
+ 73    111.85     33.28  Chandler,AZ
+ 74    115.09     36.28  NorthLasVegas,NV
+ 75    117.02     32.63  ChulaVista,CA
+ 76     78.86     42.89  Buffalo,NY
+ 77    111.74     33.31  Gilbert,AZ
+ 78    119.85     39.55  Reno,NV
+ 79     89.43     43.09  Madison,WI
+ 80     85.14     41.09  FortWayne,IN
+ 81     83.58     41.66  Toledo,OH
+ 82    101.89     33.57  Lubbock,TX
+ 83     82.64     27.77  St.Petersburg,FL
+ 84     99.49     27.56  Laredo,TX
+ 85     96.97     32.86  Irving,TX
+ 86     76.30     36.68  Chesapeake,VA
+ 87    112.19     33.53  Glendale,AZ
+ 88     80.26     36.10  Winston-Salem,NC
+ 89    111.86     33.68  Scottsdale,AZ
+ 90     96.63     32.91  Garland,TX
+ 91    116.23     43.60  Boise,ID
+ 92     76.24     36.92  Norfolk,VA
+ 93     80.39     27.28  PortSt.Lucie,FL
+ 94    117.43     47.67  Spokane,WA
+ 95     77.48     37.53  Richmond,VA
+ 96    121.94     37.49  Fremont,CA
+ 97     86.53     34.78  Huntsville,AL
+ 98    122.46     47.25  Tacoma,WA
+ 99     91.13     30.44  BatonRouge,LA
+100    118.49     34.41  SantaClarita,CA
+101    117.29     34.14  SanBernardino,CA
+102     80.30     25.87  Hialeah,FL
+103     96.82     33.16  Frisco,TX
+104    121.00     37.64  Modesto,CA
+105     81.99     26.65  CapeCoral,FL
+106    117.46     34.11  Fontana,CA
+107    117.21     33.92  MorenoValley,CA
+108     93.61     41.57  DesMoines,IA
+109     77.62     43.17  Rochester,NY
+110     78.97     35.08  Fayetteville,NC
+111     73.87     40.95  Yonkers,NY
+112     96.66     33.20  McKinney,TX
+113     71.81     42.27  Worcester,MA
+114    111.93     40.78  SaltLakeCity,UT
+115     92.36     34.72  LittleRock,AR
+116     84.87     32.51  Columbus,GA
+117     82.07     33.37  Augusta,GA
+118     96.73     43.54  SiouxFalls,SD
+119     97.02     32.69  GrandPrairie,TX
+120     84.25     30.46  Tallahassee,FL
+121    101.83     35.20  Amarillo,TX
+122    119.21     34.20  Oxnard,CA
+123    112.31     33.79  Peoria,AZ
+124     94.69     38.89  OverlandPark,KS
+125     86.27     32.35  Montgomery,AL
+126     86.80     33.53  Birmingham,AL
+127     85.66     42.96  GrandRapids,MI
+128     83.95     35.97  Knoxville,TN
+129    122.60     45.64  Vancouver,WA
+130    118.00     33.70  HuntingtonBeach,CA
+131     71.42     41.82  Providence,RI
+132     97.45     26.00  Brownsville,TX
+133    118.25     34.18  Glendale,CA
+134     81.52     41.08  Akron,OH
+135    111.93     33.39  Tempe,AZ
+136     76.52     37.08  NewportNews,VA
+137     85.25     35.07  Chattanooga,TN
+138     88.10     30.67  Mobile,AL
+139     80.15     26.14  FortLauderdale,FL
+140     78.82     35.78  Cary,NC
+141     93.79     32.47  Shreveport,LA
+142    117.60     34.04  Ontario,CA
+143    123.12     44.06  Eugene,OR
+144     88.29     41.76  Aurora,IL
+145    121.38     38.41  ElkGrove,CA
+146    123.02     44.92  Salem,OR
+147    122.71     38.45  SantaRosa,CA
+148     87.35     36.57  Clarksville,TN
+149    117.56     34.12  RanchoCucamonga,CA
+150    117.31     33.22  Oceanside,CA
+151     93.29     37.19  Springfield,MO
+152     80.34     26.01  PembrokePines,FL
+153    117.96     33.78  GardenGrove,CA
+154    105.06     40.55  FortCollins,CO
+155    118.18     34.69  Lancaster,CA
+156    118.11     34.59  Palmdale,CA
+157     86.42     35.85  Murfreesboro,TN
+158    121.63     36.69  Salinas,CA
+159    117.57     33.86  Corona,CA
+160     97.73     31.08  Killeen,TX
+161    122.10     37.63  Hayward,CA
+162     74.16     40.91  Paterson,NJ
+163     83.69     32.81  Macon,GA
+164    105.12     39.70  Lakewood,CO
+165     77.08     38.82  Alexandria,VA
+166    121.32     38.77  Roseville,CA
+167    112.45     33.67  Surprise,AZ
+168     72.54     42.12  Springfield,MA
+169     79.97     32.83  Charleston,SC
+170     94.74     39.12  KansasCity,KS
+171    122.03     37.39  Sunnyvale,CA
+172    122.16     47.60  Bellevue,WA
+173     80.16     26.03  Hollywood,FL
+174     97.14     33.22  Denton,TX
+175    117.07     33.13  Escondido,CA
+176     88.15     41.52  Joliet,IL
+177     88.16     41.75  Naperville,IL
+178     73.20     41.19  Bridgeport,CT
+179     81.15     32.00  Savannah,GA
+180     96.59     32.76  Mesquite,TX
+181     95.15     29.65  Pasadena,TX
+182     89.06     42.26  Rockford,IL
+183    117.76     34.06  Pomona,CA
+184     90.21     32.32  Jackson,MS
+185     94.82     38.88  Olathe,KS
+186     82.35     29.68  Gainesville,FL
+187     98.25     26.22  McAllen,TX
+188     76.14     43.04  Syracuse,NY
+189     97.19     31.56  Waco,TX
+190    119.33     36.33  Visalia,CA
+191    104.94     39.92  Thornton,CO
+192    118.36     33.83  Torrance,CA
+193    117.93     33.89  Fullerton,CA
+194     80.91     34.04  Columbia,SC
+195     74.20     40.08  Lakewood,NJ
+196     72.92     41.31  NewHaven,CT
+197     76.30     37.05  Hampton,VA
+198     80.34     25.97  Miramar,FL
+199    117.35     34.53  Victorville,CA
+200     83.03     42.49  Warren,MI
+201    112.01     40.69  WestValleyCity,UT
+202     91.68     41.97  CedarRapids,IA
+203     73.55     41.08  Stamford,CT
+204    117.86     33.79  Orange,CA
+205     84.20     39.78  Dayton,OH
+206    102.11     32.02  Midland,TX
+207    122.21     47.39  Kent,WA
+208     74.19     40.67  Elizabeth,NJ
+209    118.14     34.16  Pasadena,CA
+210     96.90     32.99  Carrollton,TX
+211     80.26     26.27  CoralSprings,FL
+212     83.03     42.58  SterlingHeights,MI
+213     96.83     46.86  Fargo,ND
+214     96.98     33.05  Lewisville,TX
+215    116.40     43.61  Meridian,ID
+216     97.35     35.24  Norman,OK
+217     80.66     27.96  PalmBay,FL
+218     83.37     33.95  Athens,GA
+219     92.33     38.95  Columbia,MO
+220     99.74     32.45  Abilene,TX
+221     95.32     29.56  Pearland,TX
+222    121.97     37.36  SantaClara,CA
+223     97.66     30.53  RoundRock,TX
+224     95.69     39.03  Topeka,KS
+225     75.48     40.59  Allentown,PA
+226    119.68     36.83  Clovis,CA
+227    118.75     34.27  SimiValley,CA
+228     96.30     30.59  CollegeStation,TX
+229    118.87     34.19  ThousandOaks,CA
+230    122.26     38.11  Vallejo,CA
+231    122.00     37.97  Concord,CA
+232     92.48     44.02  Rochester,MN
+233    105.15     39.83  Arvada,CO
+234     92.03     30.21  Lafayette,LA
+235     94.35     39.09  Independence,MO
+236     80.13     26.75  WestPalmBeach,FL
+237     72.68     41.77  Hartford,CT
+238     77.89     34.21  Wilmington,NC
+239     81.95     28.06  Lakeland,FL
+240    108.55     45.79  Billings,MT
+241     83.73     42.28  AnnArbor,MI
+242    122.03     38.26  Fairfield,CA
+243    122.30     37.87  Berkeley,CA
+244     96.71     32.97  Richardson,TX
+245     80.07     32.92  NorthCharleston,SC
+246     71.12     42.38  Cambridge,MA
+247     95.78     36.04  BrokenArrow,OK
+248     82.77     27.98  Clearwater,FL
+249    112.00     40.60  WestJordan,UT
+250     87.53     37.99  Evansville,IN
+251     95.11     29.49  LeagueCity,TX
+252    121.80     37.98  Antioch,CA
+253     71.44     42.98  Manchester,NH
+254     79.99     35.99  HighPoint,NC
+255     73.04     41.56  Waterbury,CT
+256    105.06     39.88  Westminster,CO
+257    122.36     37.95  Richmond,CA
+258    117.28     33.13  Carlsbad,CA
+259    106.79     32.33  LasCruces,NM
+260    117.19     33.57  Murrieta,CA
+261     71.32     42.64  Lowell,MA
+262    111.65     40.25  Provo,UT
+263     89.64     39.79  Springfield,IL
+264     88.33     42.04  Elgin,IL
+265    102.35     31.88  Odessa,TX
+266     84.56     42.71  Lansing,MI
+267     80.13     26.24  PompanoBeach,FL
+268     94.15     30.08  Beaumont,TX
+269    117.13     33.49  Temecula,CA
+270    122.44     45.50  Gresham,OR
+271     96.67     33.11  Allen,TX
+272    104.61     38.27  Pueblo,CO
+273    122.19     47.95  Everett,WA
+274     84.57     33.66  SouthFulton,GA
+275     89.62     40.75  Peoria,IL
+276    116.56     43.58  Nampa,ID
+277     87.53     33.23  Tuscaloosa,AL
+278     80.24     25.95  MiamiGardens,FL
+279    120.44     34.93  SantaMaria,CA
+280    118.13     33.94  Downey,CA
+281     80.64     35.39  Concord,NC
+282    119.25     34.27  Ventura,CA
+283    117.91     33.67  CostaMesa,CA
+284     95.63     29.59  SugarLand,TX
+285    117.18     33.69  Menifee,CA
+286     95.31     32.32  Tyler,TX
+287    119.72     39.57  Sparks,NV
+288    104.77     40.41  Greeley,CO
+289    106.70     35.29  RioRancho,NM
+290     84.37     33.93  SandySprings,GA
+291     83.21     42.31  Dearborn,MI
+292    117.47     34.00  JurupaValley,CA
+293     74.35     40.50  Edison,NJ
+294    117.23     47.66  SpokaneValley,WA
+295    122.94     45.53  Hillsboro,OR
+296     80.28     26.08  Davie,FL
+297     87.99     44.52  GreenBay,WI
+298    104.87     39.59  Centennial,CO
+299    112.64     33.43  Buckeye,AZ
+300    105.25     40.02  Boulder,CO
+301    112.37     33.25  Goodyear,AZ
+302    118.03     34.07  ElMonte,CA
+303    117.91     34.06  WestCovina,CA
+304     71.02     42.08  Brockton,MA
+305     98.12     29.70  NewBraunfels,TX
+306    116.96     32.80  ElCajon,CA
+307     98.16     26.32  Edinburg,TX
+308    122.19     47.48  Renton,WA
+309    118.33     34.19  Burbank,CA
+310    118.34     33.96  Inglewood,CA
+311    117.39     34.12  Rialto,CA
+312     94.38     38.92  Lee'sSummit,MO
+313    121.31     44.06  Bend,OR
+314     74.29     40.56  Woodbridge,NJ
+315     86.27     41.68  SouthBend,IN
+316     98.53     33.91  WichitaFalls,TX
+317    113.56     37.08  St.George,UT
+318     85.97     39.96  Fishers,IN
+319     86.15     39.97  Carmel,IN
+320    121.97     38.36  Vacaville,CA
+321     71.01     42.26  Quincy,MA
+322     95.49     30.32  Conroe,TX
+323    121.82     39.76  Chico,CA
+324    122.31     37.56  SanMateo,CA
+325     70.96     42.47  Lynn,MA
+326     73.80     42.67  Albany,NY
+327    117.32     34.40  Hesperia,CA
+328     70.94     41.66  NewBedford,MA
+329     90.60     41.56  Davenport,IA
+330    122.47     37.69  DalyCity,CA
+	  0:     74.24 ,    40.72 , Newark,NJ
+	  1:    108.10 ,    36.56 , RioRancho,NM
+	  2:     82.85 ,    34.20 , Athens,GA
+	  3:     94.64 ,    35.37 , BrokenArrow,OK
+	  4:    119.45 ,    37.39 , Clovis,CA
+ 1 ,  331 ,    5 ,   68.321:

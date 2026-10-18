@@ -8,7 +8,7 @@
 
 // setting the number of threads:
 #ifndef NUMT
-#define NUMT		    2
+#define NUMT		    1
 #endif
 
 // setting the number of capitals we want to try:
@@ -136,8 +136,8 @@ main( int argc, char *argv[ ] )
 		// get the average longitude and latitude for each capital:
 		for( int k = 0; k < NUMCAPITALS; k++ )
 		{
-			Capitals[k].longitude = Cities[k].longitude / Capitals[k].numsum;
-			Capitals[k].latitude  = Cities[k].latitude / Capitals[k].numsum;
+			Capitals[k].longitude = Capitals[k].longsum / Capitals[k].numsum;
+			Capitals[k].latitude  = Capitals[k].latsum / Capitals[k].numsum;
 		}
 	}
 
