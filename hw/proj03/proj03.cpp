@@ -8,7 +8,7 @@
 
 // setting the number of threads:
 #ifndef NUMT
-#define NUMT		    1
+#define NUMT		    2
 #endif
 
 // setting the number of capitals we want to try:
@@ -147,22 +147,22 @@ main( int argc, char *argv[ ] )
 	// figure out what actual city is closest to each capital:
 	// this is the extra credit:
 
-	for( int k = 0; k < NUMCAPITALS; k++ )
-	{
-		int citynumber = -1;
-		float mincitydist = 1.e+37;
-		for( int i = 0; i < NUMCITIES; i++ )
-		{
-			float dist = Distance( i, k );
-			if (dist < mincitydist){
-				mincitydist = dist;
-				citynumber = i;	
-			}
-		}
+	// for( int k = 0; k < NUMCAPITALS; k++ )
+	// {
+	// 	int citynumber = -1;
+	// 	float mincitydist = 1.e+37;
+	// 	for( int i = 0; i < NUMCITIES; i++ )
+	// 	{
+	// 		float dist = Distance( i, k );
+	// 		if (dist < mincitydist){
+	// 			mincitydist = dist;
+	// 			citynumber = i;	
+	// 		}
+	// 	}
 
-		Capitals[k].name = Cities[citynumber].name;
+	// 	Capitals[k].name = Cities[citynumber].name;
 
-	}
+	// }
 
 
 	// print the longitude-latitude of each new capital city:
@@ -171,10 +171,10 @@ main( int argc, char *argv[ ] )
 	{
 		for( int k = 0; k < NUMCAPITALS; k++ )
 		{
-			// fprintf( stderr, "\t%3d:  %8.2f , %8.2f\n", k, Capitals[k].longitude, Capitals[k].latitude );
+			fprintf( stderr, "\t%3d:  %8.2f , %8.2f\n", k, Capitals[k].longitude, Capitals[k].latitude );
 
 			//if you did the extra credit, use this fprintf instead:
-			fprintf( stderr, "\t%3d:  %8.2f , %8.2f , %s\n", k, Capitals[k].longitude, Capitals[k].latitude, Capitals[k].name.c_str() );
+			// fprintf( stderr, "\t%3d:  %8.2f , %8.2f , %s\n", k, Capitals[k].longitude, Capitals[k].latitude, Capitals[k].name.c_str() );
 		}
 	}
 #ifdef CSV
